@@ -1,1 +1,7 @@
-PS1="\[\e[0;36m\]TranDangVinhKhang@\h \[\e[1;35m\]\w\n\[\e[1;37m\] RealTime: '\$(date +%H:%M:%S)' \n\[\e[0m\] ---> "
+
+time_str() {
+    date "+%Y-%m-%d %H : %M : %S"
+}
+
+# Prompt
+PS1="\n\[\033[0;36m\]TranDangVinhKhang@\h \[\033[1;35m\]\w\n\[\033[1;37m\]RealTime: \$(time_str)\n\[\033[0m\] --- > "
