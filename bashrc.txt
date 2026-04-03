@@ -1,7 +1,4 @@
-
-time_str() {
-    date "+%Y-%m-%d %H : %M : %S"
-}
-
-# Prompt
-PS1="\n\[\033[0;36m\]TranDangVinhKhang@\h \[\033[1;35m\]\w\n\[\033[1;37m\]RealTime: \$(time_str)\n\[\033[0m\] --- > "
+set cur_path [pwd]                                                                                                                                                                            
+set tCIC_dir "${cur_path}/tCIC"
+fix_floorplan -type tcic -file "${tCIC_dir}/tCIC_N7_General_v1d3_3_1a_Official_04292022.tcl ${tCIC_dir}/tCIC_macro_usage_manager_N7_General_v1d3_3_1a_Official_04292022.tcl" 
+dbSet [dbGet top.insts.cell.baseClass block -p2].pStatus FIXED  
