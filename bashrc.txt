@@ -1,0 +1,1 @@
+PS1="\[\e[0;36m\]TranDangVinhKhang@\h \[\e[1;35m\]\w\n\[\e[1;37m\] RealTime: '\$(date +%H:%M:%S)' \n\[\e[0m\] ---> "
